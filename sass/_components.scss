@@ -1,0 +1,53 @@
+///////////////////////////////////////////////////////////////////
+// NAVIGATION
+
+.navigation {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 1.3rem;
+ 
+  &__img {
+    height: 5.31rem;
+  }
+}
+///////////////////////////////////////////////////////////////////
+// SEARCH
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+
+  &__input {
+    border: 1.2px solid #000;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+
+    padding: .45rem 1.25rem;
+    width: 90%;
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(0, 102, 153), rgb(0, 102, 153));
+    border: none;
+    padding: .35rem .55rem;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &__button:active > &__icon {
+    transform: translateY(2px);
+  }
+
+  &__icon {
+    height: 1.2rem;
+    width: 2.2rem;
+
+    fill: #fff;
+  }
+}
